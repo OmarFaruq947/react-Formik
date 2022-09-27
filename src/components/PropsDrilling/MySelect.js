@@ -2,6 +2,7 @@ import { useField } from 'formik';
 import React from 'react';
 
 const MySelect = ({ label, ...props }) => {
+    // console.log(props.name)
     const [field, meta] = useField(props);
     return (
         <div>
