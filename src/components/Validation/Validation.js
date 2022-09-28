@@ -1,7 +1,8 @@
 import { Field, Form, Formik } from "formik";
 import React from "react";
-const Validation = () => {
-  function validateEmail(value) {
+
+
+function validateEmail(value) {
     let error;
     if (!value) {
       error = "Required";
@@ -18,10 +19,13 @@ const Validation = () => {
     }
     return error;
   }
+const Validation = () => {
+
+
 
   return (
     <div>
-      <h1>Validation practice</h1>
+      <h1>Field-level Validation practice</h1>
       <Formik
         initialValues={{
           username: "",
